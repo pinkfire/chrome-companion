@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Pinkfire",
+  "description": "Pink up your SOA",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "jquery-2.1.3.min.js",
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "activeTab",
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking",
+    "https://ajax.googleapis.com/"
+  ]
+}
