@@ -11,11 +11,20 @@
     <div class="row">
         <div class="col-lg-12">
             <h2><img alt="Brand" width="30" height="30" src="icon.png"> Pinkfire</h2>
-            <form class="form-inline">
+            <form class="form-horizontal">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="channel" placeholder="Set your custom channel here">
+                    <label for="server" class="col-sm-2 control-label">Target</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="server">
+                    </div>
                 </div>
-                <a href="http://localhost:3000/#/" class="btn btn-primary" target="_blank">Fire !</a>
+                <div class="form-group">
+                    <label for="channel" class="col-sm-2 control-label">Channel</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="channel" placeholder="Set your custom channel here">
+                    </div>
+                </div>
+                <a href="#" id="pinkfire-go" class="btn btn-primary" target="_blank">Fire !</a>
             </form>
         </div>
     </div>
